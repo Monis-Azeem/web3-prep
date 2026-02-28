@@ -1,8 +1,8 @@
 import { ethers } from "ethers";
 
-const PRIVATE_KEY = ''
+const PRIVATE_KEY = process.env.PRIVATE_KEY ?? ''
 
-const RPC_URL = 'https://0xrpc.io/sep'
+const RPC_URL = 'https://1rpc.io/sepolia'
 
 async function testnet_tx(){
     const provider = new ethers.JsonRpcProvider(RPC_URL)
