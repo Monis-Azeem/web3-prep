@@ -15,7 +15,7 @@ async function main(){
     const message = 'Hello, Send 1 ETH to 0x0'
     //hashedMessage -> Prefix + message length + message
     const hashedMessage = ethers.hashMessage(message)
-    console.log('Hashed Message:', hashedMessage)
+    console.log('Hashed Message:', hashedMessage) 
 
     //Sign the message
     const signature = await wallet.signMessage(message)
